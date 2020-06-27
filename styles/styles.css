@@ -1,3 +1,10 @@
+/* Simple Browser basic reset using universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  /* Change the box model so borders and paddings are no longer added to total height and width that we specify for the box */
+}
+
 /*
 html {
 	font-size: 62.5%; /* Advanced CSS Udemy - set the "root" font to 10px equivalent in % - easy to calculate rem units thereafter 
@@ -5,6 +12,11 @@ html {
 
 body {
 	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:  #777;
+    padding: 2px;
 }
 
 html {
@@ -47,9 +59,35 @@ hr {
 	color: white;
 }
 
-.title {
-	color: white;
-	text-align: center;
+.heading-primary {
+    color:  #fff;	
 	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 5rem;
+}
+
+.heading-primary-main {
+	display: block;
+	text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+
+.recentPosts {
+	padding: 3rem;
+}
+
+.footer {
+	padding: 3rem;
+	background-image: url(../images/footer/footer.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }

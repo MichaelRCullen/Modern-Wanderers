@@ -4,7 +4,7 @@ html {
 } */
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 html {
@@ -25,12 +25,13 @@ hr {
 }
 
 .header {
-	min-height: 95vh; /* % of viewport height for element */
+	min-height: 95vh; /* at every point the height of this element should be 95% of the viewport height */
 	background-image: url(../images/Argentina/IMG_2667.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left;
 	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
 
 .header__color-overlay {
@@ -49,5 +50,6 @@ hr {
 .title {
 	color: white;
 	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 5rem;
 }

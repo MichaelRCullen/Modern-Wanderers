@@ -26,7 +26,7 @@ hr {
 
 .header {
 	min-height: 95vh; /* % of viewport height for element */
-	background-image: url(images/Argentina/IMG_2667.jpg);
+	background-image: url(../images/Argentina/IMG_2667.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left;

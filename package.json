@@ -1,0 +1,22 @@
+{
+  "name": "modern-wanderers",
+  "version": "1.0.0",
+  "description": "Modern Wanderers Travel Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelRCullen/Modern-Wanderers.git"
+  },
+  "author": "MRC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelRCullen/Modern-Wanderers/issues"
+  },
+  "homepage": "https://github.com/MichaelRCullen/Modern-Wanderers#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

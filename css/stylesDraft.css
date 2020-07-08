@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+    width: 100%;
+    margin: 5px auto;
+    color: #222831;
+    background-color: #ddd;
+    padding: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "nav    nav    nav    nav    nav"
+                         "head   head   head   head   head"
+                         "dest   rposts rposts rposts rposts"
+                         "pposts pposts pposts recipe recipe"   
+                         "foot   foot   foot   foot   foot";
+  }
+  
+  .navigation {
+    background-color: #ee8572;
+    grid-area: nav;
+    height: 30px;
+  }
+  
+  .header {
+    background-color: ##63b7af;
+    grid-area: head;
+    height: 125px;
+  }
+  
+  .recent-posts {
+    background-color: #d4f3ef;
+    grid-area: rposts;
+    height: 75px;
+  }
+  
+  .popular-posts {
+    background-color: #d4f3ef;
+    grid-area: pposts;
+  }
+  
+  .destinations {
+    background-color: $color-tertiary;
+    grid-area: dest;
+    height: $height-secondary;
+  }
+  
+  .recent-recipe {
+    background-color: $color-tertiary;
+    grid-area: recipe;
+  }
+  
+  .footer {
+    background-color: $color-nav;
+    grid-area: foot;
+    height: $height-nav;
+  }

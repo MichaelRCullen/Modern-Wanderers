@@ -1,6 +1,8 @@
 .header {
-	min-height: 95vh; /* at every point the height of this element should be 95% of the viewport height */
-	background-image: url(../images/Argentina/IMG_2667.jpg);
+	background-color: $color-primary;
+	text-align: center;
+	/* min-height: 35vh; */ /* at every point the height of this element should be 95% of the viewport height */
+	/* background-image: url(../images/Argentina/IMG_2667.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left;
@@ -22,4 +24,5 @@
 		transform: translate(-50%, -50%);
 		text-align: center;
 	}
+	*/
 }

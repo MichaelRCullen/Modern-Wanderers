@@ -1,19 +1,17 @@
 .destinations {
-	background-color: $color-tertiary;
-	text-align: center;
-}
-
-.recent-posts {
-	background-color: $color-secondary;
-	text-align: center;
-}
-
-.popular-posts {
-	background-color: $color-secondary;
-	text-align: center;
-}
-
-.recent-recipes {
-	background-color: $color-tertiary;
-	text-align: center;
-}
+    background-color: #abf0e9;
+ }
+ 
+ .recent-posts {
+   background-color: #d4f3ef;
+   height: 20vh;
+ }
+ 
+ .popular-posts {
+   background-color: #d4f3ef;
+   height: 20vh;
+ }
+ 
+ .recent-recipe {
+   background-color: #abf0e9;
+ }

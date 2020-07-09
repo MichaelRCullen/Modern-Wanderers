@@ -10,7 +10,7 @@
   }
   
   .header {
-     /* background-color: #63b7af; */
+     /* background-color: $color-primary */
      grid-area: head;
       
      display: grid;
@@ -18,7 +18,7 @@
      grid-template-columns: 1fr 1fr 4fr;
      grid-template-rows: 1fr 2fr 2fr 1fr;
 
-     &-primary {
+     .heading-primary {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
        }

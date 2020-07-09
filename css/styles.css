@@ -54,7 +54,7 @@ body {
 .site {
   width: 100%;
   margin: 5px auto;
-  color: #222831;
+  color: #00001a;
   background-color: grey;
   padding: 10px;
   font-size: 20px;
@@ -62,7 +62,7 @@ body {
   text-align: center; }
 
 .footer {
-  /* background-color: #ee8572; */
+  /* background-color: $color-nav; */
   height: 20vh;
   background-image: url(../images/UnitedStates/VancouverToCAride/BecksBabePano.jpg);
   background-size: cover;
@@ -75,13 +75,13 @@ body {
   grid-template-areas: "head   head   head   head   head" "nav    nav    nav    nav    nav" "dest   rposts rposts rposts rposts" "pposts pposts pposts recipe recipe"    "foot   foot   foot   foot   foot"; }
 
 .header {
-  /* background-color: #63b7af; */
+  /* background-color: $color-primary */
   grid-area: head;
   display: grid;
   gap: 5px;
   grid-template-columns: 1fr 1fr 4fr;
   grid-template-rows: 1fr 2fr 2fr 1fr; }
-  .header-primary {
+  .header .heading-primary {
     grid-column: 3 / 4;
     grid-row: 2 / 3; }
 
@@ -104,35 +104,52 @@ body {
   grid-area: foot; }
 
 .header {
-  /* background-color: #63b7af; */
+  /* background-color: $color-primary; */
   height: 40vh;
   background-image: url(../images/PeruIncaTrail/BeckPanoHeader.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center right; }
+  background-position: center right;
+  border-radius: 3rem; }
 
 .heading-primary {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
   color: #00001a;
   font-family: 'Gloria Hallelujah', cursive;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
-
-.heading-primary--main {
-  display: block;
-  text-transform: uppercase;
-  font-size: 6rem;
-  font-weight: 700;
-  letter-spacing: 3rem;
-  animation: moveInLeft 2s ease-out; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 1.75rem;
-  animation: moveInRight 2s ease-out; }
+  .heading-primary--main {
+    display: block;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 3rem;
+    animation: moveInLeft 2s ease-out;
+    display: inline-block;
+    /* regular element occupied entire page width - inline-block allows for element to occupy only
+      width of content   */
+    background-image: linear-gradient(to right, #00001a, #00005c);
+    -webkit-background-clip: text;
+    /* Will "clip" background to exactly where the text sits only - only visible where text is */
+    color: transparent;
+    /* Sets color of text to transparent to have the background effect visible only */
+    transition: all .2s; }
+    .heading-primary--main:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 26, 0.2); }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 2s ease-out;
+    display: inline-block;
+    /* regular element occupied entire page width - inline-block allows for element to occupy only
+      width of content   */
+    background-image: linear-gradient(to right, #00005c, #c060a1);
+    -webkit-background-clip: text;
+    /* Will "clip" background to exactly where the text sits only - only visible where text is */
+    color: transparent;
+    /* Sets color of text to transparent to have the background effect visible only */ }
 
 .destinations {
   background-color: #abf0e9; }

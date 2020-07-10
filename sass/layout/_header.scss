@@ -1,5 +1,23 @@
 .header {
-    /* background-color: $color-primary; */
+  height: 40vh;
+  text-align: center;
+  color: $color-blue;
+  position: relative;
+
+  .bg-image {
+    position: absolute;
+    background-image: #333 url(/images/PeruIncaTrail/BeckPanoHeader.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: -10;
+  }
+}
+
+/*  Draft Header 
+.header {
+    /* background-color: $color-primary;
     height: 40vh;
     background-image: url(../images/PeruIncaTrail/BeckPanoHeader.jpg);
     background-size: cover;
@@ -23,10 +41,10 @@
       animation: moveInLeft 2s ease-out;
       
       display: inline-block; /* regular element occupied entire page width - inline-block allows for element to occupy only
-      width of content   */
+      width of content   */  /*
       background-image: linear-gradient(to right, $color-dark, $color-blue);
-      -webkit-background-clip: text; /* Will "clip" background to exactly where the text sits only - only visible where text is */
-      color: transparent; /* Sets color of text to transparent to have the background effect visible only */
+      -webkit-background-clip: text; /* Will "clip" background to exactly where the text sits only - only visible where text is */  /*
+      color: transparent; /* Sets color of text to transparent to have the background effect visible only */  /*
       transition: all .2s;
   
       &:hover {
@@ -43,11 +61,9 @@
       animation: moveInRight 2s ease-out;
 
       display: inline-block; /* regular element occupied entire page width - inline-block allows for element to occupy only
-      width of content   */
+      width of content   */ /*
       background-image: linear-gradient(to right, $color-blue, $color-pink);
-      -webkit-background-clip: text; /* Will "clip" background to exactly where the text sits only - only visible where text is */
+      -webkit-background-clip: text; /* Will "clip" background to exactly where the text sits only - only visible where text is */ /*
       color: transparent; /* Sets color of text to transparent to have the background effect visible only */
-    
-    }
-   }
+
     

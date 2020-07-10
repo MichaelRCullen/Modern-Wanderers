@@ -1,28 +1,53 @@
 .header {
-	background-color: $color-primary;
-	text-align: center;
-	/* min-height: 35vh; */ /* at every point the height of this element should be 95% of the viewport height */
-	/* background-image: url(../images/Argentina/IMG_2667.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: left;
-	position: relative;
-	clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    /* background-color: $color-primary; */
+    height: 40vh;
+    background-image: url(../images/PeruIncaTrail/BeckPanoHeader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    border-radius: 3rem;
+  }
 
-	&__color-overlay {
-		width: 100%;
-		height: 100%;
-		background: $color-tertiary;
-		opacity: 0.7;
-		position: absolute;
-	}
+  .heading-primary {
+    color: $color-dark;
+    font-family: 'Gloria Hallelujah', cursive;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
 
-	&__text-box {
-		position: absolute;
-		top: 45%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
-	*/
-}
+    &--main {
+      display: block;
+      text-transform: uppercase;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 3rem;
+      animation: moveInLeft 2s ease-out;
+      
+      display: inline-block; /* regular element occupied entire page width - inline-block allows for element to occupy only
+      width of content   */
+      background-image: linear-gradient(to right, $color-dark, $color-blue);
+      -webkit-background-clip: text; /* Will "clip" background to exactly where the text sits only - only visible where text is */
+      color: transparent; /* Sets color of text to transparent to have the background effect visible only */
+      transition: all .2s;
+  
+      &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-dark, .2);
+      }
+    
+    }
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 1.75rem;
+      animation: moveInRight 2s ease-out;
+
+      display: inline-block; /* regular element occupied entire page width - inline-block allows for element to occupy only
+      width of content   */
+      background-image: linear-gradient(to right, $color-blue, $color-pink);
+      -webkit-background-clip: text; /* Will "clip" background to exactly where the text sits only - only visible where text is */
+      color: transparent; /* Sets color of text to transparent to have the background effect visible only */
+    
+    }
+   }
+    

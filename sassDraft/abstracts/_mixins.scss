@@ -1,8 +1,0 @@
-/* For float layout - see Natours project */
-@mixin clearfix {
-	&::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-}

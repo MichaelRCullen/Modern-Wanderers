@@ -1,0 +1,26 @@
+img {
+	display: block;
+	width: 100%; /* Make images 100% of its container - will shrink down the images */
+	height: auto;
+}
+
+.recent-posts {
+    padding: 2em 1em 1em;
+    
+}
+
+.recent-posts ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.recent-posts li {
+	margin-bottom: 1em;
+	background-color: #fff;
+	color: #333;
+}
+
+.card-content {
+	padding: 1.5em;
+}

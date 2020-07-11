@@ -1,15 +1,16 @@
 .destinations {
-    background-color: $color-tertiary;
+    background: $color-tertiary;
+    color: $color-dark;
+    text-align: center;
+    margin: 3rem; 
  }
  
  .recent-posts {
    background-color: $color-secondary;
-   height: 20vh;
  }
  
  .popular-posts {
    background-color: $color-secondary;
-   height: 20vh;
  }
  
  .recent-recipe {

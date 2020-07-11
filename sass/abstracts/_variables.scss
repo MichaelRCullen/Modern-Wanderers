@@ -1,15 +1,16 @@
 /* SCSS Variables */
 
 // COLORS
-$color-nav: #ee8572;  //8566aa or 46185f or d79abc
+/* $color-nav: #ee8572;  //8566aa or 46185f or d79abc
 $color-primary: #63b7af;  //6983aa or 297ca0 or dcffcc
 $color-secondary: #d4f3ef;  //f4f4f4 or bbbbbb or baabda
-$color-tertiary: #abf0e9;  //8ec6c5 or e9ea77 or 9fdfcd
+$color-tertiary: #abf0e9; */  //8ec6c5 or e9ea77 or 9fdfcd
 $color-dark: #00001a; 
-$color-blue: #00005c;
-$color-purple: #6a097d;
-$color-pink: #c060a1;
-$color-yellow: #ffdcb4;
+$color-primary: #00005c;
+$color-secondary: #6a097d;
+$color-nav: #c060a1;
+$color-tertiary: #ffdcb4;
+$color-white: #fff;
 
 /* HEIGHT
 $height-nav: 30px;
@@ -19,6 +20,8 @@ $height-tertiary: 50px; */
 
 //FONT
 $default-font-size: 1.6rem;
+$small-font-size: 1rem;
+$large-font-size: 2rem;
 
 /* GRID
 $grid-width: 114rem;
